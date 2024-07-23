@@ -1,0 +1,33 @@
+import map is used to specify map the value with an specific importing module
+
+it takes an json object key values pairs to map with the url
+
+example
+
+<script type = "importMap">
+ {
+    "imports":{
+       "shapes": "./shapes/square.js"
+    }
+ }
+</script>
+
+Here we can import simply as using the shapes
+
+eg import { name , func } from "shapes"
+
+It does it's work finely and imports our square.js module
+
+Imported values are hoisted in js so it will be available even before it gets declared
+
+Using import * as Module from shapes ;
+
+It will create a Module Object so with this we can call other function
+
+Example Module.draw()
+
+Module.a
+
+This is how it works when we import everything using a *
+
+
